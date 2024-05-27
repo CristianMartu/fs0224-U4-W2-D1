@@ -7,8 +7,8 @@ public class ContoCorrente {
     private double saldo;
 
     public ContoCorrente(String titolare, double saldo) {
-        this.titolare = getTitolare();
-        this.saldo = saldo;
+        this.setTitolare(titolare);
+        this.setSaldo(saldo);
         this.nMovimenti = 0;
     }
 
