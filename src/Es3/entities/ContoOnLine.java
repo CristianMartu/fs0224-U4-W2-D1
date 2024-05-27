@@ -24,5 +24,6 @@ public class ContoOnLine extends ContoCorrente {
 
     public void preleva(double x) throws BancaException {
         if (x <= this.getMaxPrelievo()) super.preleva(x);
+        else throw new BancaException("il prelievo non è disponibile");
     }
 }
